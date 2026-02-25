@@ -8,7 +8,9 @@ function left () {
     motionbit.setServoPosition(MotionBitServoChannel.S1, -90)
 }
 function connecttowifi () {
-    WiFiBit.connectToWiFiNetwork("SSID", "key")
+    let KEY = ""
+    let SSID = ""
+    WiFiBit.connectToWiFiNetwork(SSID, KEY)
     WiFiBit.connectToWiFiBit()
 }
 input.onButtonPressed(Button.A, function () {
